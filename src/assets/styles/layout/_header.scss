@@ -1,0 +1,32 @@
+header {
+  position: relative;
+  margin-top: 20px;
+}
+
+.top-header {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: inline;
+  width: 30%;
+}
+
+.center__menu li {
+  font-family: $mediumFont;
+  color: $menuColor;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+    &:not(:first-child) {
+      margin-left: 20px;
+  }
+}
+
+.contacts__phone {
+  font-family: $mainFont;
+  font-size: 1.8rem;
+}
