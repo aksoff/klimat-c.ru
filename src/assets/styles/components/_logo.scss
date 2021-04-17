@@ -1,0 +1,11 @@
+.logo {
+  width: 230px;
+  &__img {
+    height: 56px;
+    float: left;
+  }
+  &__title {
+    @include logo-title;
+    float: right;
+  }
+}

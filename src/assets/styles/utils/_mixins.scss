@@ -1,0 +1,6 @@
+@mixin logo-title($color: #444) {
+    color: $color;
+    font-family: $logoFont;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
