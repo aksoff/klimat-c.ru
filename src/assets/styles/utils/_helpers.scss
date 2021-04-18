@@ -1,20 +1,34 @@
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 135px;
+  padding-left: 135px;
   margin-right: auto;
   margin-left: auto;
- 
-  @media ($tablet) {
-    width: 750px;
-  }
-
-  @media ($desktop) {
-    width: 970px;
-  }
  
   @media ($projector) {
     width: 1170px;
   }
+  @media ($desktop) {
+    width: 970px;
+  }
+  @media ($tablet) {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    width: 750px;
+  }
+  @media ($phoneX) {
+    width: 370px;
+  }
+  
+  @media ($phone) {
+    width: 320px;
+  }
+  
+ 
+
+  
+ 
+ 
 }
 
 .spacer {

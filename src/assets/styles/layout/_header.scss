@@ -1,19 +1,29 @@
 header {
   position: relative;
-  margin-top: 20px;
 }
 
 .top-header {
+  margin-top: 20px;
   display: flex;
   position: relative;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
+  @media ($phoneX) {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
 }
 
 .center {
   display: inline;
-  width: 30%;
+  text-align: center;
+  @media ($phoneX) {
+    margin-top: 15px;
+  }
 }
 
 .center__menu li {
@@ -21,12 +31,74 @@ header {
   color: $menuColor;
   font-size: 1.4rem;
   text-transform: uppercase;
-    &:not(:first-child) {
+  &:not(:first-child) {
       margin-left: 20px;
   }
+}
+
+.center__menu li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.center__slogan p {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: $lightText;
 }
 
 .contacts__phone {
   font-family: $mainFont;
   font-size: 1.8rem;
+  @media ($phoneX) {
+    margin-top: 15px;
+  }
+
+  
+}
+
+.topmenu {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 60px;
+  @media ($phoneX) {
+    justify-content: center;
+  }
+  
+}
+.topmenu__category {
+  & .primary-btn {
+    padding: 15px 70px 15px 20px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    & .icon-category {
+      font-size: 1.9rem;
+      margin-right: 60px;
+      vertical-align: bottom;
+    }
+   
+  }
+  
+}
+.primary-btn {
+  font-family: $mediumFont;
+  font-size: 1.4rem;
+  color: $white;
+  background-color: $primary;
+  border-radius: 5px;
+  text-decoration: none;
+  white-space:nowrap;
+}
+.topmenu__menu {
+  margin-left: 50px;
+  @media ($phoneX) {
+    display: none;
+  }
+}
+.menu {
+}
+.menu-item {
+  font-family: $mediumFont;
+  font-size: 1.6rem;
+  margin-left: 20px;
 }

@@ -2,13 +2,18 @@
 $mainFont: TT Norms;
 $logoFont: TT Norms Medium;
 $mediumFont: TT Norms Medium;
+$boldFont: TT Norms Bold;
 
 
 // colors
+$white: #fff;
 $menuColor: #3865D7;
+$lightText: #929292;
+$primary: #3865D7;
 
 //screens
-$phoneX: 'min-width: 450px';
-$tablet: 'min-width: 768px';
-$desktop: 'min-width: 992px';
-$projector: 'min-width: 1200px';
+$phone: 'max-width: 370px';
+$phoneX: 'max-width: 450px';
+$tablet: 'max-width: 768px';
+$desktop: 'max-width: 992px';
+$projector: 'max-width: 1200px';
